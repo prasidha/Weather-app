@@ -1,27 +1,15 @@
 
 .App{
+  align-items: center;
+  display:grid;
+  justify-content: center;
+  align-items:center;
+  padding:2rem;
+  margin:3rem;
+
+ }
+ 
+.card{
   text-align: center;
-  margin: 5rem;
- 
- }
- .input__{
-   margin:5rem;
-   display:flex;
-   align-items: center;
-   justify-content: center;
- }
- .input__ >input {
-   width:45%;
-   height:30px;
-   font-size:20px;
-   background-color: #fff;
- 
- }
- .input__>button{
-   height: 35px;
-   width:10%;
-   font-size: 25px;
- }
- .card{
-   margin-top: 3rem;
- }
+     
+}

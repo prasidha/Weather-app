@@ -1,16 +1,20 @@
 import axios from 'axios'
 import { CONFIG } from './config'
 
-export class apicall {
-     
-    static getCurrentWeatherData =async(cityName) => {
-        let url =CONFIG.WEATHER_API.replace("~",cityName);
+export const apiCall = async (cityName) => {
+    const { data } = await axios.get(CONFIG.WEATHER_API_URL, {
+        params: {
+            q: cityName,
+            units: 'metric',
+            APPID: CONFIG.WEATHER_API_KEY,
+        }
+    });
 
-        return await axios.get(url+CONFIG.WEATHER_API_key)
-        
+    return data;
 }
 
 
-}
+
+
 
 
