@@ -53,7 +53,7 @@ export default function RecipeReviewCard({weatherData,date}) {
       <img className="cityIcon" src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} alt={weatherData.weather[0].description} />
       
       <CardContent>
-      <Typography variant="body" color="textSecondary" component="p">
+      <Typography variant="body" color="textSecondary" component="h4">
       {weatherData.name}
       <sup>{weatherData.sys.country}</sup>
       
